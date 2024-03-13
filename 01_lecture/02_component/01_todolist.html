@@ -114,7 +114,7 @@
             const memoList = memos.map(memo => <li key={memo.id}>
                                 <input type="checkbox" id='todos' checked/>
                                 {memo.text}
-                                <input type="button" />
+                                <button id="cancle">X</button>
                                 </li>
                                 );
             return(
@@ -129,6 +129,6 @@
     
         ReactDOM.createRoot(document.getElementById('root')).render(<TodoList/>);
     </script>
-    <footer>Copyright 2024. soobin all right reserved.</footer>
+    <footer>@Copyright 2024. soobin all right reserved.</footer>
 </body>
 </html>
