@@ -34,7 +34,8 @@ public class UserService {
     }
 
     public LoginUserDTO findByUsername(String username) {
-
+        System.out.println("findByUsername" + username);
+        System.out.println("findByUsername" + userMapper);
         LoginUserDTO login = userMapper.findByUsername(username);
 
         if (!Objects.isNull(login)) {

@@ -1,6 +1,6 @@
-package com.ohgiraffers.sessionsecurity.user.model.dto;
+package com.ohgiraffers.jwtsecurity.user.dto;
 
-import com.ohgiraffers.sessionsecurity.common.UserRole;
+import com.ohgiraffers.jwtsecurity.common.UserRole;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -10,25 +10,26 @@ public class LoginUserDTO {
 
     private int userCode;
     private String userId;
+    private String userPass;
     private String userName;
-    private String password;
     private UserRole userRole;
 
-    public LoginUserDTO(){}
+    public LoginUserDTO() {
+    }
 
-    public LoginUserDTO(int userCode, String userId, String userName, String password, UserRole userRole) {
+    public LoginUserDTO(int userCode, String userId, String userName, String userPass, UserRole userRole) {
         this.userCode = userCode;
         this.userId = userId;
         this.userName = userName;
-        this.password = password;
+        this.userPass = userPass;
         this.userRole = userRole;
     }
 
     public List<String> getRole() {
-        if (this.userRole.getRole().length() > 0) {
-            System.out.println("4" + userRole);
+        if(this.userRole.getRole().length() > 0) {
             return Arrays.asList(this.userRole.getRole().split(","));
         }
+
         return new ArrayList<>();
     }
 
@@ -56,12 +57,12 @@ public class LoginUserDTO {
         this.userName = userName;
     }
 
-    public String getPassword() {
-        return password;
+    public String getUserPass() {
+        return userPass;
     }
 
-    public void setPassword(String password) {
-        this.password = password;
+    public void setUserPass(String userPass) {
+        this.userPass = userPass;
     }
 
     public UserRole getUserRole() {
@@ -78,7 +79,7 @@ public class LoginUserDTO {
                 "userCode=" + userCode +
                 ", userId='" + userId + '\'' +
                 ", userName='" + userName + '\'' +
-                ", password='" + password + '\'' +
+                ", userPass='" + userPass + '\'' +
                 ", userRole=" + userRole +
                 '}';
     }
