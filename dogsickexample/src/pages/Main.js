@@ -1,9 +1,18 @@
+import styles from './Main.module.css'
 
 function Main(){
 
     return(
         <>
-            <h1>메인</h1>
+            <div className={styles.container}>
+                <div>
+                    <p>Help your dogs</p>
+                    <p>Health</p>
+                </div>
+                <div>
+                    
+                </div>
+            </div>
         </>
     )
 }

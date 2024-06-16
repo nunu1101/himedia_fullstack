@@ -1,4 +1,5 @@
 import styles from './Header1.module.css'
+import { Link } from 'react-router-dom';
 
 function Header1(){
 
@@ -7,7 +8,9 @@ function Header1(){
             <div className={styles.all}>
                 <div className={styles.container}>
                     <div className={styles.containerBox}>
-                        <a href="/" className={styles.leftText}>About</a>
+                        <Link to={'/company'} className={styles.leftText}>
+                            About
+                        </Link>
                         <a href="/" className={styles.leftText}>Search</a>
                     </div>
                     <div className={styles.mainBox}>

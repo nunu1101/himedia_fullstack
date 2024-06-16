@@ -7,7 +7,7 @@ function Header2(){
             <div className={styles.all}>
                 <div className={styles.container}>
                     <div className={styles.containerBox}>
-                        <a href="/" className={styles.leftText}>About</a>
+                        <a href="../pages/Company.js" className={styles.leftText}>About</a>
                         <a href="/" className={styles.leftText}>Search</a>
                     </div>
                     <div className={styles.mainBox}>
