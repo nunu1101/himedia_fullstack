@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<title>HTML Layouts</title>
+	<style>
+        * {
+            font-weight: bolder;
+        }
+		header {
+			background:blue;
+			height:100px;
+            text-align: left;
+		}
+		#nav {
+            display: block;
+			background:red;
+			width:15%;
+			height:500px;
+			float:left;
+		}
+		#section {
+            display: inline;
+            background: green;
+			width:70%;
+            height: 500px;
+			float:left;
+		}
+
+        #article1 {
+            background: greenyellow;
+            margin-bottom: 0%;
+            margin-left: 5%;
+            margin-right: 2%;
+            height: 145px;
+        }
+
+        #article2 {
+            margin-top: 0%;
+            background: pink;
+            margin-bottom: 0%;
+            margin-left: 5%;
+            margin-right: 2%;
+            height: 145px;
+        }
+        #article3 {
+            background: skyblue;
+            margin-top: 0%;
+            margin-left: 5%;
+            margin-right: 2%;
+            height: 145px;
+        }
+
+        #aside {
+            display: inline;
+            background:darkblue;
+			width:15%;
+            height: 500px;
+			float: left;
+        }
+		footer {
+			background:purple;
+            height: 30px;
+			clear:both;
+		}
+	</style>
+</head>
+
+<body>
+
+	<h1>페이지 레이아웃 설정</h1>
+	<header>HEADER</header>
+	<div id="nav">
+		<p>nav</p>
+	</div>
+	<div id="section">
+		<div id="section section">SECTION
+            <p id="article1">article</p>
+            <p id="article2">article</p>
+            <p id="article3">article</p>
+        </div>
+	</div>
+    <div id="aside">
+        <h3>aside</h3>
+    </div>
+	<footer>FOOTER</footer>
+
+</body>
+
+</html>
